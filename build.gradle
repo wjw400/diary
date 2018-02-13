@@ -1,7 +1,10 @@
-group 'wjw400'
-version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
+plugins {
+    id 'java'
+    id 'war'
+}
+
+apply plugin: 'war'
 
 sourceCompatibility = 1.8
 
@@ -12,3 +15,5 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
+group 'wjw400'
+version '1.0-SNAPSHOT'
